@@ -12,6 +12,7 @@
   "crates.io": "The crates.io ecosystem for Rust; the `name` field is a crate name.",
   "Debian": "The Debian package ecosystem; the `name` is the name of the source package. The ecosystem string might optionally have a `:<RELEASE>` suffix to scope the package to a particular Debian release. `<RELEASE>` is a numeric version specified in the [Debian distro-info-data](https://debian.pages.debian.net/distro-info-data/debian.csv). For example, the ecosystem string \"Debian:7\" refers to the Debian 7 (wheezy) release.",
   "Echo": "The Echo package ecosystem; the `name` is the name of the source package.",
+  "FreeBSD": "The FreeBSD ecosystem encompasses the core system, kernel, and ports. The `name` refers to the name of a package managed by `pkg(8)`, the package manager. This ecosystem string can include `:ports`, indicating that it pertains to issues within FreeBSD ports. Additionally, it may contain an optional `:<RELEASE>` segment, specifying that the issue is specific to a particular FreeBSD release. For core system issues (`:core`), the `ranges[].events` versions correspond to different FreeBSD releases. Similarly, kernel-related issues are denoted by `:kernel`.",
   "GHC": "The Haskell compiler ecosystem. The `name` field is the name of a component of the GHC compiler ecosystem (e.g., compiler, GHCI, RTS).",
   "GitHub Actions": "The GitHub Actions ecosystem; the `name` field is the action's repository name with owner e.g. `{owner}/{repo}`.",
   "Go": "The Go ecosystem; the `name` field is a Go module path.",
